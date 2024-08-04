@@ -1,0 +1,16 @@
+.header {
+    transition: all 0.5s;
+    z-index: 997px;
+    height: 50px;
+    box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+    background-color: #0e788e;
+    padding-left: 0px;
+}
+
+.header .toggle-siderbar-btn {
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 10px;
+    cursor: pointer;
+    color: #fff;
+}

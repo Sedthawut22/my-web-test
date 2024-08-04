@@ -1,0 +1,44 @@
+import React, { useState } from 'react'
+import './card.css'
+import CardFilter from './CardFilter'
+
+function Card({ card }) {
+    const [filter, setFilter] = useState('วันนี้')
+    const handleFilterChange = filter => {
+        setFilter(filter)
+    }
+
+    return (
+        <div className='col-xxl-4 col-md-6'>
+            <div className='card info-card sale-card'>
+                <CardFilter filterChange={handleFilterChange} />
+                <div className='card-body'>
+                    <h5 className='card-title'>
+                        {card.name} <span>| {filter}</span>
+                    </h5>
+
+                    <div className='d-flex align-items-center'>
+                        <div className='card-icon rounded-circle d-flex align-items-center justify-content-center'>
+                            <i className={card.icon}></i>
+                        </div>
+                        <div className='ps-3'>
+                            <h6>
+                                {card.name === 'Revenue'
+                                    ? '$' + card.amount.toLacaleString('en-US')
+                                    : card.amount.toLocaleString('en-US')}
+                            </h6>
+                            <span
+                                className={`${card.percentage > 0 ? 'text-success' : 'text-danger'
+                                    } small pt-1 fw-bold`}
+                            >
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    )
+
+}
+
+export default Card

@@ -1,0 +1,27 @@
+
+.dashboard .info-card {
+    padding-bottom: 10px;
+}
+
+.dashboard .info-card h6  {
+    font-size: 25px;
+    color: #012970;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Thai Looped';
+}
+
+.dashboard .card-icon {
+    font-size: 25px;
+    line-height: 0;
+    width: 54px;
+    height: 54px;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.dashboard .sale-card .card-icon {
+    color: #275cb8;
+    background: #f6f6fe;
+}
