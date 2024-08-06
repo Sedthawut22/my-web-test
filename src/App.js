@@ -8,7 +8,6 @@ import './App.css';
 import Header from './components/Header';
 import SideBar from './components/SideBar';
 import Main from './components/Main';
-import { BrowserRouter, Routes,Route } from 'react-router-dom';
 
 function App() {
   return (
